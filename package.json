@@ -1,0 +1,21 @@
+{
+  "name": "continuous",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "mocha --reporter spec test"
+  },  
+  "dependencies": {
+    "express": "^4.11.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "supertest": "^0.15.0"
+  }
+}
