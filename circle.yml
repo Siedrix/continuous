@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: v0.10.28
+deployment:
+  master:
+    branch: master
+    commands:
+      - curl --data "build=true" -X POST https://registry.hub.docker.com/u/siedrix/continuous/trigger/e9e79018-a28e-11e4-9d63-0242ac11003d/

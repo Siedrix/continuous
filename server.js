@@ -5,8 +5,8 @@ app.get('/', function (req, res) {
 	res.send('Redeploy!');
 });
 
-app.get('/about', function (req, res) {
-	res.send('About is here!');
+app.get('/ci', function (req, res) {
+	res.send('ci!');
 });
 
 app.get('*', function (req, res) {
