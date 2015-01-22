@@ -5,6 +5,10 @@ app.get('/', function (req, res) {
 	res.send('Redeploy!');
 });
 
+app.get('/about', function (req, res) {
+	res.send('About is here!');
+});
+
 app.get('*', function (req, res) {
 	res.send(req.path);
 });
