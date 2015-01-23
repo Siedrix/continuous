@@ -3,7 +3,7 @@ var request = require('supertest');
 var app = require('../server');
 
 describe('Requests', function(){
-	it('GET / should return "Redeploy!"', function(done){
+	it('GET / should return "Hello world!"', function(done){
 		request(app)
 		.get('/')
 		.expect('Hello world!')
