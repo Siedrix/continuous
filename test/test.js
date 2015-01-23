@@ -1,4 +1,3 @@
-var assert = require('assert');
 var request = require('supertest');
 
 var app = require('../server');
@@ -7,7 +6,7 @@ describe('Requests', function(){
 	it('GET / should return "Redeploy!"', function(done){
 		request(app)
 		.get('/')
-		.expect('Redeploy!')
+		.expect('Hello world!')
 		.end(function(err){
 			if (err){ return done(err); }
 

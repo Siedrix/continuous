@@ -2,11 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-	res.send('Redeploy!');
-});
-
-app.get('/ci', function (req, res) {
-	res.send('ci!');
+	res.send('Hello world!');
 });
 
 app.get('*', function (req, res) {
