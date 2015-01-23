@@ -3,10 +3,10 @@ var request = require('supertest');
 var app = require('../server');
 
 describe('Requests', function(){
-	it('GET / should return "Hello world!"', function(done){
+	it('GET / should return "Deploy!!!!!!"', function(done){
 		request(app)
 		.get('/')
-		.expect('Hello world!')
+		.expect('Deploy!!!!!!')
 		.end(function(err){
 			if (err){ return done(err); }
 
