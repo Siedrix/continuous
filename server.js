@@ -5,6 +5,10 @@ app.get('/', function (req, res) {
 	res.send('Deploy!!!!!!');
 });
 
+app.get('/docker', function (req, res) {
+	res.send('Im in docker');
+});
+
 app.get('*', function (req, res) {
 	res.send(req.path);
 });
