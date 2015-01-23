@@ -9,6 +9,10 @@ app.get('/docker', function (req, res) {
 	res.send('Im in docker');
 });
 
+app.get('/tutum', function (req, res) {
+	res.send('Hello tutum');
+});
+
 app.get('*', function (req, res) {
 	res.send(req.path);
 });
